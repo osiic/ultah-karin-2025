@@ -3,667 +3,411 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Ulang Tahun Karin 2025</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Selamat Ulang Tahun Karin!</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
-        :root {
-            --primary: #e63946;
-            --secondary: #a8dadc;
-            --accent: #457b9d;
-            --light: #f1faee;
-            --dark: #1d3557;
-            --gold: #ffd166;
-        }
-
+        
         body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
-            overflow-x: hidden;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: #333;
             line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
-
+        
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--dark) 100%);
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-            position: relative;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            padding: 30px;
+            text-align: center;
         }
-
-        .header-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .header-content h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .header-content p {
-            font-size: 1.5rem;
+        
+        .header {
             margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
         }
-
-        .floating-hearts {
+        
+        h1 {
+            color: #e84393;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            color: #fd79a8;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .birthday-girl {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fd79a8;
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            background-color: #ffeaa7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            color: #e84393;
+        }
+        
+        .message {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #fd79a8;
+        }
+        
+        .message p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .late-note {
+            background-color: #ffeaa7;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #e17055;
+        }
+        
+        .wishes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .wish-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 45%;
+            margin: 10px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .wish-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .wish-item i {
+            font-size: 2rem;
+            color: #e84393;
+            margin-bottom: 10px;
+        }
+        
+        .countdown {
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+        
+        .countdown h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .countdown-timer {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .countdown-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .countdown-item span:last-child {
+            font-size: 0.9rem;
+            font-weight: normal;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .wish-item {
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .countdown-timer {
+                font-size: 1.4rem;
+            }
+        }
+        
+        .balloon {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
+            width: 40px;
+            height: 50px;
+            background: #e84393;
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+            z-index: -1;
         }
-
-        .heart {
+        
+        .balloon:before {
+            content: "";
             position: absolute;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 24px;
-            animation: float 6s ease-in-out infinite;
+            width: 2px;
+            height: 30px;
+            background: #e84393;
+            top: 50px;
+            left: 19px;
         }
-
+        
+        .balloon:nth-child(2) {
+            left: 10%;
+            background: #fd79a8;
+            animation-delay: 1s;
+        }
+        
+        .balloon:nth-child(3) {
+            left: 20%;
+            background: #a29bfe;
+            animation-delay: 2s;
+        }
+        
+        .balloon:nth-child(4) {
+            left: 30%;
+            background: #ffeaa7;
+            animation-delay: 3s;
+        }
+        
+        .balloon:nth-child(5) {
+            left: 40%;
+            background: #55efc4;
+            animation-delay: 4s;
+        }
+        
+        .balloon:nth-child(6) {
+            left: 50%;
+            background: #74b9ff;
+            animation-delay: 5s;
+        }
+        
+        .balloon:nth-child(7) {
+            left: 60%;
+            background: #ff7675;
+            animation-delay: 6s;
+        }
+        
+        .balloon:nth-child(8) {
+            left: 70%;
+            background: #fdcb6e;
+            animation-delay: 7s;
+        }
+        
+        .balloon:nth-child(9) {
+            left: 80%;
+            background: #a29bfe;
+            animation-delay: 8s;
+        }
+        
+        .balloon:nth-child(10) {
+            left: 90%;
+            background: #fd79a8;
+            animation-delay: 9s;
+        }
+        
         @keyframes float {
             0%, 100% {
                 transform: translateY(0) rotate(0deg);
             }
             50% {
-                transform: translateY(-20px) rotate(10deg);
-            }
-        }
-
-        /* Navigation */
-        nav {
-            background-color: var(--dark);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-            position: relative;
-        }
-
-        nav ul li a:hover {
-            color: var(--secondary);
-        }
-
-        nav ul li a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--secondary);
-            transition: width 0.3s;
-        }
-
-        nav ul li a:hover::after {
-            width: 100%;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--accent);
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 3px;
-            background-color: var(--primary);
-            margin: 15px auto;
-        }
-
-        /* About Section */
-        .about-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 40px;
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: var(--dark);
-        }
-
-        .about-image {
-            flex: 1;
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 8px solid var(--secondary);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.5s;
-        }
-
-        .profile-img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Wishes Section */
-        .wishes-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .wish-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .wish-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .wish-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 100%;
-            background-color: var(--primary);
-        }
-
-        .wish-card h3 {
-            margin-bottom: 15px;
-            color: var(--accent);
-        }
-
-        .wish-card p {
-            color: var(--dark);
-        }
-
-        /* Gallery Section */
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery-item {
-            border-radius: 10px;
-            overflow: hidden;
-            position: relative;
-            height: 250px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-            color: white;
-            padding: 20px;
-            transform: translateY(100%);
-            transition: transform 0.3s;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
-        }
-
-        /* Countdown Section */
-        .countdown-section {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        .countdown-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .countdown-item {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            padding: 20px;
-            min-width: 120px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .countdown-number {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .countdown-label {
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Medical Theme Elements */
-        .medical-icons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .medical-icon {
-            background-color: white;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            color: var(--accent);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, background-color 0.3s;
-        }
-
-        .medical-icon:hover {
-            transform: scale(1.1);
-            background-color: var(--secondary);
-        }
-
-        /* Birthday Info Section */
-        .birthday-info {
-            text-align: center;
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            margin-bottom: 40px;
-        }
-
-        .birthday-date {
-            font-size: 2rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 50px 0 20px;
-            text-align: center;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 20px;
-        }
-
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .social-icon:hover {
-            background-color: var(--primary);
-            transform: translateY(-5px);
-        }
-
-        .copyright {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header-content h1 {
-                font-size: 2.5rem;
-            }
-            
-            .about-content {
-                flex-direction: column;
-            }
-            
-            .countdown-container {
-                flex-wrap: wrap;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
+                transform: translateY(-20px) rotate(5deg);
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="floating-hearts" id="hearts-container"></div>
-        <div class="container header-content">
-            <h1>Selamat Ulang Tahun, Karin!</h1>
-            <p>Merayakan hari spesial calon dokter masa depan</p>
-            <div class="medical-icons">
-                <div class="medical-icon">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
-                <div class="medical-icon">
-                    <i class="fas fa-stethoscope"></i>
-                </div>
-                <div class="medical-icon">
-                    <i class="fas fa-plus-square"></i>
-                </div>
+    <!-- Balon-balon -->
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Selamat Ulang Tahun Karin! 🎉</h1>
+            <p class="subtitle">Merayakan hari spesialmu yang jatuh pada 6 Oktober</p>
+        </div>
+        
+        <div class="birthday-girl">
+            🎂
+        </div>
+        
+        <div class="message">
+            <p>Hai Karin!</p>
+            <p>Selamat ulang tahun yang ke-...! Semoga di usia yang baru ini, kamu diberikan kesehatan, kebahagiaan, dan kesuksesan dalam segala hal yang kamu lakukan.</p>
+            <p>Kamu adalah teman yang luar biasa dan menyenangkan. Terima kasih sudah menjadi bagian dari hidupku dan memberikan warna-warni indah dalam persahabatan kita.</p>
+            <p>Semoga semua impian dan harapanmu di tahun ini terwujud. Teruslah menjadi pribadi yang positif dan inspiratif bagi orang-orang di sekitarmu!</p>
+        </div>
+        
+        <div class="late-note">
+            <p>Maaf ya ucapan ini telat sedikit... Tapi yang penting niat dan doa baiknya sampai, kan? 😊</p>
+        </div>
+        
+        <div class="wishes">
+            <div class="wish-item">
+                <div>💖</div>
+                <h3>Kesehatan</h3>
+                <p>Semoga selalu diberikan kesehatan dan vitalitas</p>
+            </div>
+            <div class="wish-item">
+                <div>😊</div>
+                <h3>Kebahagiaan</h3>
+                <p>Semoga selalu diliputi kebahagiaan dan keceriaan</p>
+            </div>
+            <div class="wish-item">
+                <div>🌟</div>
+                <h3>Kesuksesan</h3>
+                <p>Semoga sukses dalam segala hal yang dikerjakan</p>
+            </div>
+            <div class="wish-item">
+                <div>👫</div>
+                <h3>Persahabatan</h3>
+                <p>Semoga persahabatan kita tetap langgeng selamanya</p>
             </div>
         </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">Tentang Karin</a></li>
-                <li><a href="#birthday-info">Ulang Tahun</a></li>
-                <li><a href="#wishes">Ucapan</a></li>
-                <li><a href="#gallery">Galeri</a></li>
-                <li><a href="#countdown">Hitungan Mundur</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">Tentang Karin</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Calon Dokter Masa Depan</h3>
-                    <p>Karin adalah seorang mahasiswi kedokteran yang penuh semangat dan dedikasi. Dengan kecerdasan dan ketekunannya, dia sedang menempuh perjalanan untuk menjadi seorang dokter yang handal dan penuh empati.</p>
-                    <p>Di hari ulang tahunnya ini, kami semua berharap yang terbaik untuk perjalanan karirnya di dunia kedokteran. Semoga sukses selalu dan menjadi dokter yang menginspirasi banyak orang!</p>
-                    <p>"The good physician treats the disease; the great physician treats the patient who has the disease." - William Osler</p>
-                </div>
-                <div class="about-image">
-                    <div class="profile-img-placeholder">
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ilustrasi dokter wanita" class="profile-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Birthday Info Section -->
-    <section id="birthday-info" style="background-color: #f8f9fa;">
-        <div class="container">
-            <h2 class="section-title">Ulang Tahun Karin</h2>
-            <div class="birthday-info">
-                <div class="birthday-date">6 Oktober</div>
-                <p>Hari spesial ini adalah hari dimana Karin lahir ke dunia. Tanggal 6 Oktober selalu menjadi hari yang ditunggu-tunggu untuk merayakan keberadaannya yang membawa kebahagiaan bagi orang-orang di sekitarnya.</p>
-                <p>Di tahun 2025 ini, mari kita rayakan hari istimewa Karin dengan penuh sukacita dan doa terbaik untuk masa depannya.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Wishes Section -->
-    <section id="wishes">
-        <div class="container">
-            <h2 class="section-title">Ucapan Ulang Tahun</h2>
-            <div class="wishes-container">
-                <div class="wish-card">
-                    <h3>Dari Keluarga</h3>
-                    <p>Selamat ulang tahun, sayang! Kami bangga dengan perjalananmu menuju menjadi dokter. Terus semangat dan jaga kesehatan selalu. Kami selalu mendukungmu!</p>
-                </div>
-                <div class="wish-card">
-                    <h3>Dari Teman Sekelas</h3>
-                    <p>Happy birthday, Karin! Semoga di usia yang baru ini, kamu semakin sukses dalam studi kedokteranmu. Jangan lupa istirahat yang cukup di antara jadwal belajarmu yang padat!</p>
-                </div>
-                <div class="wish-card">
-                    <h3>Dari Sahabat</h3>
-                    <p>Selamat ulang tahun untuk calon dokter terbaik! Terima kasih sudah menjadi teman yang selalu mendukung. Semoga semua impianmu tercapai, terutama menjadi dokter spesialis yang kamu idamkan.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" style="background-color: #f8f9fa;">
-        <div class="container">
-            <h2 class="section-title">Galeri Inspirasi</h2>
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Ilustrasi belajar kedokteran">
-                    <div class="gallery-overlay">
-                        <p>Semangat Belajar</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ilustrasi persahabatan">
-                    <div class="gallery-overlay">
-                        <p>Kebersamaan</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ilustrasi kampus kedokteran">
-                    <div class="gallery-overlay">
-                        <p>Dunia Kedokteran</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="Ilustrasi perayaan">
-                    <div class="gallery-overlay">
-                        <p>Momen Bahagia</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Countdown Section -->
-    <section id="countdown" class="countdown-section">
-        <div class="container">
-            <h2 class="section-title" style="color: white;">Menuju Ulang Tahun Karin 2025</h2>
-            <div class="countdown-container">
+        
+        <div class="countdown">
+            <h3>Menuju Ulang Tahun Berikutnya</h3>
+            <div class="countdown-timer">
                 <div class="countdown-item">
-                    <div class="countdown-number" id="days">0</div>
-                    <div class="countdown-label">Hari</div>
+                    <span id="days">0</span>
+                    <span>Hari</span>
                 </div>
                 <div class="countdown-item">
-                    <div class="countdown-number" id="hours">0</div>
-                    <div class="countdown-label">Jam</div>
+                    <span id="hours">0</span>
+                    <span>Jam</span>
                 </div>
                 <div class="countdown-item">
-                    <div class="countdown-number" id="minutes">0</div>
-                    <div class="countdown-label">Menit</div>
+                    <span id="minutes">0</span>
+                    <span>Menit</span>
                 </div>
                 <div class="countdown-item">
-                    <div class="countdown-number" id="seconds">0</div>
-                    <div class="countdown-label">Detik</div>
+                    <span id="seconds">0</span>
+                    <span>Detik</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <h3>Dibuat dengan ❤️ untuk Karin</h3>
-                <p>Semoga ulang tahunmu penuh kebahagiaan dan menjadi awal tahun yang penuh berkah!</p>
-                <div class="social-icons">
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-                <p class="copyright">© 2025 Ulang Tahun Karin. All rights reserved.</p>
-            </div>
+        
+        <div class="footer">
+            <p>Dibuat dengan penuh kasih sayang untuk Karin ❤️</p>
         </div>
-    </footer>
+    </div>
 
     <script>
-        // Floating Hearts Animation
-        function createHearts() {
-            const container = document.getElementById('hearts-container');
-            const heartCount = 20;
-            
-            for (let i = 0; i < heartCount; i++) {
-                const heart = document.createElement('div');
-                heart.classList.add('heart');
-                heart.innerHTML = '❤';
-                
-                // Random position and animation delay
-                const left = Math.random() * 100;
-                const top = Math.random() * 100;
-                const delay = Math.random() * 5;
-                
-                heart.style.left = `${left}%`;
-                heart.style.top = `${top}%`;
-                heart.style.animationDelay = `${delay}s`;
-                
-                container.appendChild(heart);
-            }
-        }
-
-        // Countdown Timer to Karin's birthday (October 6, 2025)
+        // Countdown timer untuk ulang tahun berikutnya (6 Oktober 2026)
         function updateCountdown() {
-            const targetDate = new Date('October 6, 2025 00:00:00').getTime();
+            const nextBirthday = new Date('October 6, 2026 00:00:00').getTime();
             const now = new Date().getTime();
-            const timeLeft = targetDate - now;
+            const timeLeft = nextBirthday - now;
             
-            // Calculate days, hours, minutes, seconds
             const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
             
-            // Update the countdown display
-            document.getElementById('days').textContent = days;
-            document.getElementById('hours').textContent = hours;
-            document.getElementById('minutes').textContent = minutes;
-            document.getElementById('seconds').textContent = seconds;
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
         }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Initialize when page loads
-        window.addEventListener('DOMContentLoaded', () => {
-            createHearts();
-            updateCountdown();
+        
+        // Update countdown setiap detik
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Panggil sekali di awal
+        
+        // Efek konfeti sederhana
+        function createConfetti() {
+            const confettiCount = 50;
+            const container = document.querySelector('body');
             
-            // Update countdown every second
-            setInterval(updateCountdown, 1000);
+            for (let i = 0; i < confettiCount; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                confetti.style.backgroundColor = getRandomColor();
+                confetti.style.width = (Math.random() * 10 + 5) + 'px';
+                confetti.style.height = (Math.random() * 10 + 5) + 'px';
+                confetti.style.position = 'fixed';
+                confetti.style.top = '-10px';
+                confetti.style.borderRadius = '50%';
+                confetti.style.zIndex = '9999';
+                confetti.style.animation = `fall ${confetti.style.animationDuration} linear forwards`;
+                
+                container.appendChild(confetti);
+                
+                // Hapus confetti setelah animasi selesai
+                setTimeout(() => {
+                    confetti.remove();
+                }, parseFloat(confetti.style.animationDuration) * 1000);
+            }
+            
+            // Tambahkan style untuk animasi confetti
+            if (!document.querySelector('#confetti-style')) {
+                const style = document.createElement('style');
+                style.id = 'confetti-style';
+                style.textContent = `
+                    @keyframes fall {
+                        to {
+                            transform: translateY(100vh) rotate(360deg);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        }
+        
+        function getRandomColor() {
+            const colors = ['#e84393', '#fd79a8', '#a29bfe', '#74b9ff', '#55efc4', '#ffeaa7', '#fdcb6e', '#ff7675'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+        
+        // Jalankan efek konfeti saat halaman dimuat
+        window.addEventListener('load', function() {
+            setTimeout(createConfetti, 1000);
         });
     </script>
 </body>
